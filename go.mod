@@ -1,3 +1,3 @@
-module opus.v2
+module libopus
 
 go 1.13
