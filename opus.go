@@ -2,7 +2,7 @@
 //
 // License for use of this code is detailed in the LICENSE file
 
-package opus
+package libopus
 
 /*
 // Link opus using pkg-config.

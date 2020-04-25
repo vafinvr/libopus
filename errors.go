@@ -2,7 +2,7 @@
 //
 // License for use of this code is detailed in the LICENSE file
 
-package opus
+package libopus
 
 import (
 	"fmt"
@@ -34,4 +34,3 @@ const (
 func (e Error) Error() string {
 	return fmt.Sprintf("opus: %s", C.GoString(C.opus_strerror(C.int(e))))
 }
-
