@@ -189,7 +189,7 @@ func (enc *Encoder) Encode(pcm []int16, data []byte) (int, error) {
 
 // Encode raw PCM data and store the result in the supplied buffer. On success,
 // returns the number of bytes used up by the encoded data.
-func (enc *Encoder) EncodeFloat32(pcm []float32, data []byte) (int, error) {
+/*func (enc *Encoder) EncodeFloat32(pcm []float32, data []byte) (int, error) {
 	if enc.p == nil {
 		return 0, errEncUninitialized
 	}
@@ -214,7 +214,7 @@ func (enc *Encoder) EncodeFloat32(pcm []float32, data []byte) (int, error) {
 	}
 	return n, nil
 }
-
+*/
 // SetDTX configures the encoder's use of discontinuous transmission (DTX).
 func (enc *Encoder) SetDTX(dtx bool) error {
 	i := 0

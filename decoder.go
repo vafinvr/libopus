@@ -94,7 +94,7 @@ func (dec *Decoder) Decode(data []byte, pcm []int16) (int, error) {
 
 // Decode encoded Opus data into the supplied buffer. On success, returns the
 // number of samples correctly written to the target buffer.
-func (dec *Decoder) DecodeFloat32(data []byte, pcm []float32) (int, error) {
+/*func (dec *Decoder) DecodeFloat32(data []byte, pcm []float32) (int, error) {
 	if dec.p == nil {
 		return 0, errDecUninitialized
 	}
@@ -119,7 +119,7 @@ func (dec *Decoder) DecodeFloat32(data []byte, pcm []float32) (int, error) {
 	}
 	return n, nil
 }
-
+*/
 // DecodeFEC encoded Opus data into the supplied buffer with forward error
 // correction. It is to be used on the packet directly following the lost one.
 // The supplied buffer needs to be exactly the duration of audio that is missing
@@ -152,7 +152,7 @@ func (dec *Decoder) DecodeFEC(data []byte, pcm []int16) error {
 // DecodeFECFloat32 encoded Opus data into the supplied buffer with forward error
 // correction. It is to be used on the packet directly following the lost one.
 // The supplied buffer needs to be exactly the duration of audio that is missing
-func (dec *Decoder) DecodeFECFloat32(data []byte, pcm []float32) error {
+/*func (dec *Decoder) DecodeFECFloat32(data []byte, pcm []float32) error {
 	if dec.p == nil {
 		return errDecUninitialized
 	}
@@ -177,7 +177,7 @@ func (dec *Decoder) DecodeFECFloat32(data []byte, pcm []float32) error {
 	}
 	return nil
 }
-
+*/
 // LastPacketDuration gets the duration (in samples)
 // of the last packet successfully decoded or concealed.
 func (dec *Decoder) LastPacketDuration() (int, error) {
